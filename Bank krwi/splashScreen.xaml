@@ -1,0 +1,11 @@
+﻿<Window x:Class="Bank_krwi.splashScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="splashScreen" Height="413.33" Width="442.292" IsHitTestVisible="True" Visibility="Visible" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+    <Grid MouseLeftButtonDown="move" Margin="0,0,10,0" Height="410" VerticalAlignment="Top">
+        <Grid.Background>
+            <ImageBrush ImageSource="Photos/dami.jpg"/>
+        </Grid.Background>
+        <Label Content="Loading ..." HorizontalAlignment="Left" Margin="323,374,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

@@ -62,6 +62,7 @@ namespace Bank_krwi {
 
             Donator donator = new Donator(imie, nazwisko, Int32.Parse(String.IsNullOrEmpty(wiek) ? "0" : wiek), grupaKrwi, plec, adres, Int32.Parse(String.IsNullOrEmpty(telefon) ? "0" : telefon), oddanaKrew);
             AddDonator(donator);
+            InitBinding();
         }
 
         private void AddDonator(Donator donator) {

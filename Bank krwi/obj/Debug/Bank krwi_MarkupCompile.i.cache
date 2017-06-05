@@ -4,16 +4,28 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\Piotrek\bank_krwi\Bank krwi\obj\Debug\
+=======
+C:\Users\damian\Desktop\bank_krwi\Bank krwi\obj\Debug\
+>>>>>>> 7ae9a085aacdeacf8de14fd55509ed888ca6a8f0
 Bank_krwi
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\Piotrek\bank_krwi\Bank krwi\App.xaml
 8665090745
 
 26-1568503011
 31160695000
+=======
+C:\Users\damian\Desktop\bank_krwi\Bank krwi\App.xaml
+8665090745
+
+261229317687
+31-1205675381
+>>>>>>> 7ae9a085aacdeacf8de14fd55509ed888ca6a8f0
 facebookPosts.xaml;MainWindow.xaml;newUser.xaml;showPlaces.xaml;showUser.xaml;showGroup.xaml;splashScreen.xaml;targerPlaces.xaml;
 
 False

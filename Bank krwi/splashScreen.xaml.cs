@@ -26,7 +26,7 @@ namespace Bank_krwi
            
         }
 
-        private void move(object sender, MouseButtonEventArgs e) {
+        private void Move(object sender, MouseButtonEventArgs e) {
 
             DragMove();
         }

@@ -24,20 +24,20 @@ namespace Bank_krwi
             InitializeComponent();
         }
 
-        private void gizyckoButton_Click(object sender, RoutedEventArgs e)
+        private void GizyckoButtonClick(object sender, RoutedEventArgs e)
         {
 
             TargerPlaces tarPlace = new TargerPlaces(3);
             tarPlace.Show();
         }
 
-        private void dzialdowoButton_Click(object sender, RoutedEventArgs e)
+        private void DzialdowoButtonClick(object sender, RoutedEventArgs e)
         {
             TargerPlaces tarPlace = new TargerPlaces(2);
             tarPlace.Show();
         }
 
-        private void olsztynButton_Click(object sender, RoutedEventArgs e)
+        private void OlsztynButtonClick(object sender, RoutedEventArgs e)
         {
             TargerPlaces tarPlace = new TargerPlaces(1);
             tarPlace.Show();

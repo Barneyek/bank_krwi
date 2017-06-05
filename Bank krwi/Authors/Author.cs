@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Bank_krwi.Authors {
     class Author {
-        public String Imie { get; private set; }
-        public String Nazwisko { get; private set; }
-        public String Grupa { get; private set; }
+        public String FirstName { get; private set; }
+        public String Surname { get; private set; }
+        public String BloodGr { get; private set; }
 
-        public Author(String imie, String nazwisko, String grupa) {
-            Imie = imie;
-            Nazwisko = nazwisko;
-            Grupa = grupa;
+        public Author(String firstName, String surname, String bloodGr) {
+            FirstName = firstName;
+            Surname = surname;
+            BloodGr = bloodGr;
         }
     }
 }

@@ -7,24 +7,24 @@ using System.Threading.Tasks;
 
 namespace Bank_krwi {
     class Donator {
-        public String Imie { get; private set; }
-        public String Nazwisko { get; private set; }
-        public Int32 Wiek { get; private set; }
-        public String GrupaKrw { get; private set; }
-        public String Plec { get; private set; }
-        public String Adres { get; private set; }
-        public Int32 Telefon { get; private set; }
-        public String IloscOddanejKrwi { get; set; }
+        public String FirstName { get; private set; }
+        public String Surname { get; private set; }
+        public Int32 Age { get; private set; }
+        public String BloodGr { get; private set; }
+        public String Sex { get; private set; }
+        public String Address { get; private set; }
+        public Int32 PhoneNumber { get; private set; }
+        public String AmountOfBlood { get; set; }
 
-        public Donator(String imie, String nazwisko, Int32 wiek, String grupaKrw, String plec, String adres, Int32 telefon, String iloscKrwii) {
-            this.Imie = imie;
-            this.Nazwisko = nazwisko;
-            this.Wiek = wiek;
-            this.GrupaKrw = grupaKrw;
-            this.Plec = plec;
-            this.Adres = adres;
-            this.Telefon = telefon;
-            this.IloscOddanejKrwi = iloscKrwii;
+        public Donator(String firstName, String surname, Int32 age, String bloodGr, String sex, String address, Int32 phoneNumber, String amountOfBlood) {
+            this.FirstName = firstName;
+            this.Surname = surname;
+            this.Age = age;
+            this.BloodGr = bloodGr;
+            this.Sex = sex;
+            this.Address = address;
+            this.PhoneNumber = phoneNumber;
+            this.AmountOfBlood = amountOfBlood;
         }
     }
 }

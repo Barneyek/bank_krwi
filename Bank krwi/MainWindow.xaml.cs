@@ -92,13 +92,13 @@ namespace Bank_krwi
         }
 
         private void AuthorsButtonClick(object sender, RoutedEventArgs e) {
-            List<Author> listaAutorow = AuthorsSingleton.Instance.listaAutorow;
+            List<Author> listaAutorow = AuthorsSingleton.Instance.AuthorList;
             StringBuilder sb = new StringBuilder();
             sb.Append("Autorzy:");
             sb.Append(Environment.NewLine);
             sb.Append(Environment.NewLine);
             foreach(Author author in listaAutorow) {
-                sb.Append(author.Imie + " " + author.Nazwisko + ", grupa: " + author.Grupa);
+                sb.Append(author.FirstName + " " + author.Surname + ", grupa: " + author.BloodGr);
                 sb.Append(Environment.NewLine);
             }
             MessageBox.Show(sb.ToString());

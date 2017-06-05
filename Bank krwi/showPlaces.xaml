@@ -7,17 +7,17 @@
             <RowDefinition Height="132*"/>
             <RowDefinition Height="133*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="gizyckoButton" Content="Gizycko" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Width="208" Height="137" Grid.RowSpan="2" Click="gizyckoButton_Click">
+        <Button x:Name="gizyckoButton" Content="Gizycko" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Width="208" Height="137" Grid.RowSpan="2" Click="GizyckoButtonClick">
             <Button.Background>
                 <ImageBrush ImageSource="Photos/gizycko.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="dzialdowoButton" Content="Dzialdowo" HorizontalAlignment="Left" Margin="255,42,0,0" VerticalAlignment="Top" Width="206" Height="137" Grid.RowSpan="2" Click="dzialdowoButton_Click">
+        <Button x:Name="dzialdowoButton" Content="Dzialdowo" HorizontalAlignment="Left" Margin="255,42,0,0" VerticalAlignment="Top" Width="206" Height="137" Grid.RowSpan="2" Click="DzialdowoButtonClick">
             <Button.Background>
                 <ImageBrush ImageSource="Photos/dzialdowo.jpg"/>
             </Button.Background>
         </Button>
-        <Button x:Name="olsztynButton" Content="Olsztyn" HorizontalAlignment="Left" Margin="113,36,0,0" Grid.Row="1" VerticalAlignment="Top" Width="234" Height="116" Click="olsztynButton_Click">
+        <Button x:Name="olsztynButton" Content="Olsztyn" HorizontalAlignment="Left" Margin="113,36,0,0" Grid.Row="1" VerticalAlignment="Top" Width="234" Height="116" Click="OlsztynButtonClick">
             <Button.Background>
                 <ImageBrush ImageSource="Photos/olsztyn.jpg"/>
             </Button.Background>

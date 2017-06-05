@@ -160,13 +160,13 @@
             <TextBox x:Name="bloodToGive" Height="23" TextWrapping="Wrap" Text="0" Width="120" TextChanged="TextBoxTextChanged"/>
             <Button x:Name="addBloodBtn" Content="Dodaj krew" Width="75" Click="AddBloodButtonClick"/>
         </WrapPanel>
-        <TextBox x:Name="imieBox" HorizontalAlignment="Left" Height="23" Margin="10,0,0,111" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120"/>
-        <TextBox x:Name="nazwiskoBox" HorizontalAlignment="Left" Height="23" Margin="10,0,0,83" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120"/>
-        <TextBox x:Name="wiekBox" HorizontalAlignment="Left" Height="23" Margin="10,0,0,55" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120"/>
-        <TextBox x:Name="plecBox" HorizontalAlignment="Left" Height="23" Margin="259,0,0,111" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120"/>
-        <TextBox x:Name="adresBox" HorizontalAlignment="Left" Height="23" Margin="259,0,0,83" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120"/>
-        <TextBox x:Name="telefonBox" HorizontalAlignment="Left" Height="23" Margin="259,0,0,55" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120"/>
-        <TextBox x:Name="oddanaKrewBox" HorizontalAlignment="Left" Height="23" Margin="259,0,0,27" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120"/>
+        <TextBox x:Name="firstNameBox" HorizontalAlignment="Left" Height="23" Margin="10,0,0,111" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120"/>
+        <TextBox x:Name="surnameBox" HorizontalAlignment="Left" Height="23" Margin="10,0,0,83" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120"/>
+        <TextBox x:Name="ageBox" HorizontalAlignment="Left" Height="23" Margin="10,0,0,55" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120"/>
+        <TextBox x:Name="sexBox" HorizontalAlignment="Left" Height="23" Margin="259,0,0,111" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120"/>
+        <TextBox x:Name="addressBox" HorizontalAlignment="Left" Height="23" Margin="259,0,0,83" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120"/>
+        <TextBox x:Name="phoneNumberBox" HorizontalAlignment="Left" Height="23" Margin="259,0,0,55" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120"/>
+        <TextBox x:Name="amountOfBloodBox" HorizontalAlignment="Left" Height="23" Margin="259,0,0,27" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120"/>
         <ComboBox x:Name="comboGr" HorizontalAlignment="Left" Margin="10,0,0,25" Width="120" SelectionChanged="ComboBoxSelectionChanged" Loaded="ComboBoxLoaded" IsEditable="True" IsReadOnly="True" Height="23" VerticalAlignment="Bottom"/>
         <Label Content="Imie" HorizontalAlignment="Left" Margin="130,0,0,108" VerticalAlignment="Bottom"/>
         <Label Content="Nazwisko" HorizontalAlignment="Left" Margin="130,0,0,83" VerticalAlignment="Bottom"/>

@@ -8,59 +8,59 @@ namespace Bank_krwi
 {
     class ShowUserClass
     {
-        private int id;
-        public string imie { get; private set; }
-        public string nazwisko { get; private set; }
-        public string dataUrodzenia { get; private set; }
-        public string grupaKrwii { get; private set; }
-        public string plec { get; private set; }
-        public string adres { get; private set; }
-        public string numerTelefonu { get; private set; }
+        private int Id;
+        public string FirstName { get; private set; }
+        public string Surname { get; private set; }
+        public string Date { get; private set; }
+        public string BloodGr { get; private set; }
+        public string Sex { get; private set; }
+        public string Address { get; private set; }
+        public string PhoneNumber { get; private set; }
 
-        public ShowUserClass(string imie, string nazwisko, string dataUrodzenia, string grupaKrwii, string plec, string adres, string numerTelefonu) {
+        public ShowUserClass(string firstName, string surname, string date, string bloodGr, string sex, string address, string phoneNumber) {
 
-            this.imie = imie;
-            this.nazwisko = nazwisko;
-            this.dataUrodzenia = dataUrodzenia;
-            this.grupaKrwii = grupaKrwii;
-            this.plec = plec;
-            this.adres = adres;
-            this.numerTelefonu = numerTelefonu;
+            this.FirstName = firstName;
+            this.Surname = surname;
+            this.Date = date;
+            this.BloodGr = bloodGr;
+            this.Sex = sex;
+            this.Address = address;
+            this.PhoneNumber = phoneNumber;
         }
 
-        public string wezImie()
+        public string TakeFirstName()
         {
-            return this.imie;
+            return this.FirstName;
         }
 
-        public string wezNazwisko()
+        public string TakeSurname()
         {
-            return this.nazwisko;
+            return this.Surname;
         }
 
-        public string wezDataUrodzenia()
+        public string TakeDate()
         {
-            return this.dataUrodzenia;
+            return this.Date;
         }
 
-        public string wezGrupaKrwii()
+        public string TakeBloodGr()
         {
-            return this.grupaKrwii;
+            return this.BloodGr;
         }
 
-        public string wezPlec()
+        public string TakeSex()
         {
-            return this.plec;
+            return this.Sex;
         }
 
-        public string wezAdres()
+        public string TakeAddress()
         {
-            return this.adres;
+            return this.Address;
         }
 
-        public string wezNumerTelefonu()
+        public string TakePhoneNumber()
         {
-            return this.numerTelefonu;
+            return this.PhoneNumber;
         }
 
     }

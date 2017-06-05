@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 namespace Bank_krwi {
     class AuthorsSingleton {
         private static AuthorsSingleton instance;
-        public List<Author> listaAutorow { get; private set; }
+        public List<Author> AuthorList { get; private set; }
 
         private AuthorsSingleton() {
-            listaAutorow = new List<Author> {
+            AuthorList = new List<Author> {
                 new Author("Damian", "Osiecki", "Wtorkowa"),
                 new Author("Kamil", "Tomczak", "Wtorkowa"),
                 new Author("Piotr", "Jankowski", "Wtorkowa")

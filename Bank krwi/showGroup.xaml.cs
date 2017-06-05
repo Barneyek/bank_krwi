@@ -105,28 +105,28 @@ namespace Bank_krwi
                 //dane o konkretnym dawcy jako lista obiektów
                 var zawartoscTabeli = showUser.m_oDataTable.Rows[i].ItemArray;
 
-                var imie = zawartoscTabeli[1].ToString();
-                var nazwisko = zawartoscTabeli[2].ToString();
+                var firstName = zawartoscTabeli[1].ToString();
+                var surname = zawartoscTabeli[2].ToString();
                 //jeżeli podczas parsowania wystąpi błąd(np to nie jest liczba), to przypisuje wiek jako 0
-                int wiek;
+                int age;
                 try {
-                    wiek = Int32.Parse(zawartoscTabeli[3].ToString());
+                    age = Int32.Parse(zawartoscTabeli[3].ToString());
                 } catch(System.FormatException) {
-                    wiek = 0;
+                    age = 0;
                 }
-                var grupaKrw = zawartoscTabeli[4].ToString();
-                var plec = zawartoscTabeli[5].ToString();
-                var adres = zawartoscTabeli[6].ToString();
-                int telefon;
+                var bloodGr = zawartoscTabeli[4].ToString();
+                var sex = zawartoscTabeli[5].ToString();
+                var address = zawartoscTabeli[6].ToString();
+                int phoneNumber;
                 try {
-                    telefon = Int32.Parse(zawartoscTabeli[7].ToString());
+                    phoneNumber = Int32.Parse(zawartoscTabeli[7].ToString());
                 } catch(System.FormatException) {
-                    telefon = 0;
+                    phoneNumber = 0;
                 }
-                var iloscKrwii = zawartoscTabeli[8].ToString();
+                var amountOfBlood = zawartoscTabeli[8].ToString();
 
                 try {
-                    Donator donator = new Donator(imie, nazwisko, wiek, grupaKrw, plec, adres, telefon, iloscKrwii);
+                    Donator donator = new Donator(firstName, surname, age, bloodGr, sex, address, phoneNumber, amountOfBlood);
                     donators.Add(donator);
                 } catch (Exception ex) {
                     MessageBox.Show(ex.Message);
@@ -158,14 +158,14 @@ namespace Bank_krwi
        
         private Paragraph CreateParagraphFromDonator(Donator donator) {
             String paragraphText = "";
-            paragraphText += donator.Imie + " ";
-            paragraphText += donator.Nazwisko + " ";
-            paragraphText += donator.Wiek + " ";
-            paragraphText += donator.GrupaKrw + " ";
-            paragraphText += donator.Plec + " ";
-            paragraphText += donator.Adres + " ";
-            paragraphText += donator.Telefon + " ";
-            paragraphText += donator.IloscOddanejKrwi + " ";
+            paragraphText += donator.FirstName + " ";
+            paragraphText += donator.Surname + " ";
+            paragraphText += donator.Age + " ";
+            paragraphText += donator.BloodGr + " ";
+            paragraphText += donator.Sex + " ";
+            paragraphText += donator.Address + " ";
+            paragraphText += donator.PhoneNumber + " ";
+            paragraphText += donator.AmountOfBlood + " ";
 
             return new Paragraph(paragraphText);
         }

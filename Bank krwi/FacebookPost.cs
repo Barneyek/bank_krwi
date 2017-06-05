@@ -11,11 +11,11 @@ namespace Bank_krwi
         public string message { get; set; }
         public string id { get; set; }
 
-        public FacebookPost(string CreatedTime, string Message, string Id)
+        public FacebookPost(string createdTime, string message, string id)
         {
-            this.created_time = CreatedTime;
-            this.message = Message;
-            this.id = Id;
+            this.created_time = createdTime;
+            this.message = message;
+            this.id = id;
         }
     }
 

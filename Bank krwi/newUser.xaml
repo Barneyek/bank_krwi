@@ -1,7 +1,7 @@
 ﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="Bank_krwi.newUser"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="Bank_krwi.NewUser"
         Title="Dodaj dawcę" Height="363" Width="614">
     <Grid>
         <Grid.RowDefinitions>
@@ -9,7 +9,7 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <ListView Grid.Row="0" Margin="0,10,0,138"
-			x:Name="lstItems" ItemsSource="{Binding}" SelectionChanged="lstItems_SelectionChanged">
+			x:Name="lstItems" ItemsSource="{Binding}" SelectionChanged="lstItemsSelectionChanged">
             <ListView.View>
                 <GridView AllowsColumnReorder="True">
                     <GridViewColumn>
@@ -152,13 +152,13 @@
         </ListView>
         <WrapPanel Grid.Row="1">
             <Button Content="Dodaj" x:Name="btnAdd" Margin="5"
-				Click="btnAdd_Click" />
+				Click="ButtonAddClick" />
             <Button Content="Usuń" x:Name="btnDelete" Margin="5"
-				Click="btnDelete_Click" />
+				Click="ButtonDeleteClick" />
             <Button Content="Aktualizuj dane" x:Name="btnEdit" Margin="5"
-				Click="btnEdit_Click" />
-            <TextBox x:Name="bloodToGive" Height="23" TextWrapping="Wrap" Text="0" Width="120" TextChanged="TextBox_TextChanged"/>
-            <Button x:Name="addBloodBtn" Content="Dodaj krew" Width="75" Click="addBloodBtn_Click"/>
+				Click="ButtonEditClick" />
+            <TextBox x:Name="bloodToGive" Height="23" TextWrapping="Wrap" Text="0" Width="120" TextChanged="TextBoxTextChanged"/>
+            <Button x:Name="addBloodBtn" Content="Dodaj krew" Width="75" Click="AddBloodButtonClick"/>
         </WrapPanel>
         <TextBox x:Name="imieBox" HorizontalAlignment="Left" Height="23" Margin="10,0,0,111" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120"/>
         <TextBox x:Name="nazwiskoBox" HorizontalAlignment="Left" Height="23" Margin="10,0,0,83" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120"/>
@@ -167,7 +167,7 @@
         <TextBox x:Name="adresBox" HorizontalAlignment="Left" Height="23" Margin="259,0,0,83" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120"/>
         <TextBox x:Name="telefonBox" HorizontalAlignment="Left" Height="23" Margin="259,0,0,55" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120"/>
         <TextBox x:Name="oddanaKrewBox" HorizontalAlignment="Left" Height="23" Margin="259,0,0,27" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120"/>
-        <ComboBox x:Name="comboGr" HorizontalAlignment="Left" Margin="10,0,0,25" Width="120" SelectionChanged="comboBox_SelectionChanged" Loaded="ComboBox_Loaded" IsEditable="True" IsReadOnly="True" Height="23" VerticalAlignment="Bottom"/>
+        <ComboBox x:Name="comboGr" HorizontalAlignment="Left" Margin="10,0,0,25" Width="120" SelectionChanged="ComboBoxSelectionChanged" Loaded="ComboBoxLoaded" IsEditable="True" IsReadOnly="True" Height="23" VerticalAlignment="Bottom"/>
         <Label Content="Imie" HorizontalAlignment="Left" Margin="130,0,0,108" VerticalAlignment="Bottom"/>
         <Label Content="Nazwisko" HorizontalAlignment="Left" Margin="130,0,0,83" VerticalAlignment="Bottom"/>
         <Label Content="Wiek" HorizontalAlignment="Left" Margin="130,0,0,55" VerticalAlignment="Bottom" Height="23"/>

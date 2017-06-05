@@ -17,9 +17,9 @@ namespace Bank_krwi
     /// <summary>
     /// Interaction logic for facebookPosts.xaml
     /// </summary>
-    public partial class facebookPosts : Window
+    public partial class FacebookPosts : Window
     {
-        public facebookPosts(FacebookPost fbook)
+        public FacebookPosts(FacebookPost fbook)
         {
             InitializeComponent();
             PostGrid.DataContext = fbook;

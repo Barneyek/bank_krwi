@@ -19,14 +19,14 @@ namespace Bank_krwi {
     /// <summary>
     /// Interaction logic for newUser.xaml
     /// </summary>
-    public partial class newUser : Window {
+    public partial class NewUser : Window {
         private SQLiteDataAdapter m_oDataAdapter = null;
         private DataSet m_oDataSet = null;
         private DataTable m_oDataTable = null;
 
         private IDonatorValidation donatorValidation = new DonatorValidationImplentation();
 
-        public newUser() {
+        public NewUser() {
             InitializeComponent();
             InitBinding();  
         }
@@ -46,7 +46,7 @@ namespace Bank_krwi {
             lstItems.DataContext = m_oDataTable.DefaultView;
         }
 
-        private void btnAdd_Click(object sender, RoutedEventArgs e) {
+        private void ButtonAddClick(object sender, RoutedEventArgs e) {
             string imie = imieBox.Text;
             string nazwisko = nazwiskoBox.Text;
             string wiek = wiekBox.Text;
@@ -103,7 +103,7 @@ namespace Bank_krwi {
             m_oDataAdapter.Update(m_oDataSet);
         }
 
-        private void btnEdit_Click(object sender, RoutedEventArgs e) {
+        private void ButtonEditClick(object sender, RoutedEventArgs e) {
             string imie = imieBox.Text;
             string nazwisko = nazwiskoBox.Text;
             string wiek = wiekBox.Text;
@@ -136,7 +136,7 @@ namespace Bank_krwi {
         }
 
 
-        private void btnDelete_Click(object sender, RoutedEventArgs e) {
+        private void ButtonDeleteClick(object sender, RoutedEventArgs e) {
             if(0 == lstItems.SelectedItems.Count) {
                 return;
             }
@@ -145,11 +145,11 @@ namespace Bank_krwi {
             m_oDataAdapter.Update(m_oDataSet);
         }
 
-        private void Window_Closing(object sender,
+        private void WindowClosing(object sender,
             System.ComponentModel.CancelEventArgs e) {
         }
 
-        private void ComboBox_Loaded(object sender, RoutedEventArgs e) {
+        private void ComboBoxLoaded(object sender, RoutedEventArgs e) {
             List<string> data = new List<string>();
             data.Add("Wybierz");
             data.Add("0Rh-");
@@ -165,15 +165,15 @@ namespace Bank_krwi {
             combo.SelectedIndex = 0;
         }
 
-        private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e) {
+        private void ComboBoxSelectionChanged(object sender, SelectionChangedEventArgs e) {
 
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e) {
+        private void TextBoxTextChanged(object sender, TextChangedEventArgs e) {
 
         }
 
-        private void addBloodBtn_Click(object sender, RoutedEventArgs e) {
+        private void AddBloodButtonClick(object sender, RoutedEventArgs e) {
             string dodatkowaKrew = bloodToGive.Text;
 
             if(String.IsNullOrWhiteSpace(dodatkowaKrew) || dodatkowaKrew.All(char.IsDigit)) { // sprawdzamy, czy uzytkownik wpisal jakaś wartość i czy wszystkie znaki są cyfrą 
@@ -210,7 +210,7 @@ namespace Bank_krwi {
             }
         }
 
-        private void lstItems_SelectionChanged(object sender, SelectionChangedEventArgs e) {
+        private void lstItemsSelectionChanged(object sender, SelectionChangedEventArgs e) {
             DataRowView index = (DataRowView)lstItems.SelectedItem; //wybiera obiekt z listy i zamienia go na typ DataRowView
             if(index == null) { // Jeżeli nie znaleziono indeksu, to powróć(nie wykonuj reszty kodu)
                 return;

@@ -18,13 +18,13 @@ namespace Bank_krwi {
     /// <summary>
     /// Interaction logic for targerPlaces.xaml
     /// </summary>
-    public partial class targerPlaces : Window {
+    public partial class TargerPlaces : Window {
         public SQLiteDataAdapter m_oDataAdapter = null;
         public DataSet m_oDataSet = null;
         public DataTable m_oDataTable = null;
         string street, city;
 
-        public targerPlaces(int id) {
+        public TargerPlaces(int id) {
             InitializeComponent();
             InitBinding(id);
             SearchPlace(id);

@@ -34,42 +34,42 @@ namespace Bank_krwi
 
 
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ButtonClick(object sender, RoutedEventArgs e)
         {
-            newUser newUser = new newUser();
+            NewUser newUser = new NewUser();
             newUser.Show();
           //  this.Close();
 
            
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void ButtonClick_1(object sender, RoutedEventArgs e)
         {
-            showPlaces showPlaces = new showPlaces();
+            ShowPlaces showPlaces = new ShowPlaces();
             showPlaces.Show();
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void ButtonClick2(object sender, RoutedEventArgs e)
         {
            /* showUser showUser = new showUser();
             showUser.Show();*/
-            showGroup showGroup = new showGroup();
+            ShowGroup showGroup = new ShowGroup();
             showGroup.Show();
            
 
         }
 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
+        private void ButtonClick3(object sender, RoutedEventArgs e)
         {
-            string token = getToken();
+            string token = GetToken();
             var request = (HttpWebRequest)WebRequest.Create("https://graph.facebook.com/v2.9/wetbankkrwi/feed?access_token=" + token);
             var response = (HttpWebResponse)request.GetResponse();
-            FacebookPost fbPost = getFacebookPost(response);
-            facebookPosts facebookPost = new facebookPosts(fbPost);
+            FacebookPost fbPost = GetFacebookPost(response);
+            FacebookPosts facebookPost = new FacebookPosts(fbPost);
             facebookPost.Show();
         }
 
-        private string getToken()
+        private string GetToken()
         {
             var tokenRequest = (HttpWebRequest)WebRequest.Create("https://graph.facebook.com/v2.9/oauth/access_token?client_id=1066391300160675&client_secret=529c6b46acc37b676b6bc438c7691291&grant_type=client_credentials");
             var tokenResponse = (HttpWebResponse)tokenRequest.GetResponse();
@@ -79,7 +79,7 @@ namespace Bank_krwi
             return y.access_token;
         }
 
-        private FacebookPost getFacebookPost(HttpWebResponse response)
+        private FacebookPost GetFacebookPost(HttpWebResponse response)
         {
             var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
             dynamic x = JsonConvert.DeserializeObject(responseString);
@@ -91,7 +91,7 @@ namespace Bank_krwi
             return fbPost;
         }
 
-        private void authorsBtn_Click(object sender, RoutedEventArgs e) {
+        private void AuthorsButtonClick(object sender, RoutedEventArgs e) {
             List<Author> listaAutorow = AuthorsSingleton.Instance.listaAutorow;
             StringBuilder sb = new StringBuilder();
             sb.Append("Autorzy:");

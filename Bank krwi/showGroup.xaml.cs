@@ -19,78 +19,78 @@ namespace Bank_krwi
     /// <summary>
     /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class showGroup : Window
+    public partial class ShowGroup : Window
     {
         private List<Donator> donators = new List<Donator>();
 
-        public showGroup()
+        public ShowGroup()
         {
             InitializeComponent();
         }
 
-        private void Click_0Rh0(object sender, RoutedEventArgs e)
+        private void Click0Rh0(object sender, RoutedEventArgs e)
         {
             string a = "0Rh-";
-            showUser showUser = new showUser(a);
-            readDonators(showUser);
+            ShowUser showUser = new ShowUser(a);
+            ReadDonators(showUser);
             showUser.Show();
         }
 
-        private void Click_0Rh1(object sender, RoutedEventArgs e)
+        private void Click0Rh1(object sender, RoutedEventArgs e)
         {
             string a = "0Rh+";
-            showUser showUser = new showUser(a);
-            readDonators(showUser);
+            ShowUser showUser = new ShowUser(a);
+            ReadDonators(showUser);
             showUser.Show();
         }
 
-        private void Click_BRh1(object sender, RoutedEventArgs e)
+        private void ClickBRh1(object sender, RoutedEventArgs e)
         {
             string a = "BRh+";
-            showUser showUser = new showUser(a);
-            readDonators(showUser);
+            ShowUser showUser = new ShowUser(a);
+            ReadDonators(showUser);
             showUser.Show();
         }
 
-        private void Click_BRh0(object sender, RoutedEventArgs e)
+        private void ClickBRh0(object sender, RoutedEventArgs e)
         {
             string a = "BRh-";
-            showUser showUser = new showUser(a);
-            readDonators(showUser);
+            ShowUser showUser = new ShowUser(a);
+            ReadDonators(showUser);
             showUser.Show();
 
         }
 
-        private void Click_ARh1(object sender, RoutedEventArgs e)
+        private void ClickARh1(object sender, RoutedEventArgs e)
         {
             string a = "ARh+";
-            showUser showUser = new showUser(a);
-            readDonators(showUser);
+            ShowUser showUser = new ShowUser(a);
+            ReadDonators(showUser);
             showUser.Show();
         }
 
-        private void Click_ARh0(object sender, RoutedEventArgs e)
+        private void ClickARh0(object sender, RoutedEventArgs e)
         {
             string a = "ARh-";
-            showUser showUser = new showUser(a);
-            readDonators(showUser);
+            ShowUser showUser = new ShowUser(a);
+            ReadDonators(showUser);
             showUser.Show();
 
         }
 
-        private void Click_ABRh1(object sender, RoutedEventArgs e)
+        private void ClickABRh1(object sender, RoutedEventArgs e)
         {
             string a = "ABRh+";
-            showUser showUser = new showUser(a);
-            readDonators(showUser);
+            ShowUser showUser = new ShowUser(a);
+            ReadDonators(showUser);
             showUser.Show();
         }
 
-        private void Click_ABRh0(object sender, RoutedEventArgs e)
+        private void ClickABRh0(object sender, RoutedEventArgs e)
         {
             string a = "ABRh-";
-            showUser showUser = new showUser(a);
-            readDonators(showUser);
+            ShowUser showUser = new ShowUser(a);
+            ReadDonators(showUser);
             showUser.Show();
         }
 
@@ -98,7 +98,7 @@ namespace Bank_krwi
         /// Zapisuje wszystkich dawców krwi do listy
         /// </summary>
         /// <param name="showUser">dane o wybranych dawcach</param>
-        private void readDonators(showUser showUser) {
+        private void ReadDonators(ShowUser showUser) {
             donators.Clear();
             //for po wszystkich kolumnach z showUser
             for(int i = 0; i < showUser.m_oDataTable.Rows.Count; i++) {
@@ -134,7 +134,7 @@ namespace Bank_krwi
             }
         }
 
-        private void B_pdf_Click(object sender, RoutedEventArgs e)
+        private void BpdfClick(object sender, RoutedEventArgs e)
         {
             try {
                 Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
@@ -143,7 +143,7 @@ namespace Bank_krwi
                             //Zaawartosc dokumentu
                 if(donators.Count() > 0) {
                     foreach(var donator in donators) {
-                        doc.Add(createParagraphFromDonator(donator));
+                        doc.Add(CreateParagraphFromDonator(donator));
                     }
                 } else {
                     doc.Add(new Paragraph("Brak danych"));
@@ -156,7 +156,7 @@ namespace Bank_krwi
             }
         }
        
-        private Paragraph createParagraphFromDonator(Donator donator) {
+        private Paragraph CreateParagraphFromDonator(Donator donator) {
             String paragraphText = "";
             paragraphText += donator.Imie + " ";
             paragraphText += donator.Nazwisko + " ";

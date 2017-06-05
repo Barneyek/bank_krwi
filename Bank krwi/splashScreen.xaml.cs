@@ -17,10 +17,10 @@ namespace Bank_krwi
     /// <summary>
     /// Interaction logic for splashScreen.xaml
     /// </summary>
-    public partial class splashScreen : Window
+    public partial class SplashScreen : Window
     {
 
-        public splashScreen()
+        public SplashScreen()
         {
             InitializeComponent();
            

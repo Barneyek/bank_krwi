@@ -21,7 +21,7 @@ namespace Bank_krwi
         private const int min_spl_time = 5000;
 
         protected override void OnStartup(StartupEventArgs e) {
-            splashScreen splash = new splashScreen();
+            SplashScreen splash = new SplashScreen();
             splash.Show();
             Stopwatch timer = new Stopwatch();
             timer.Start();

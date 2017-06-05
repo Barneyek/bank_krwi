@@ -20,7 +20,7 @@ namespace Bank_krwi
     /// <summary>
     /// Interaction logic for showUser.xaml
     /// </summary>
-    public partial class showUser : Window
+    public partial class ShowUser : Window
     {
      //   private List<ShowUserClass> m_oPersonList = null;
 
@@ -29,7 +29,7 @@ namespace Bank_krwi
         public DataTable m_oDataTable = null;
 
 
-        public showUser(string group)
+        public ShowUser(string group)
         {
             InitializeComponent();
             InitBinding(group);

@@ -40,7 +40,7 @@ namespace Bank_krwi {
                 "ABRh+"
             };
 
-            if(!checkIfStringIsInArray(donator.GrupaKrw, dostepneGrupyKrwi)) {
+            if(!CheckIfStringIsInArray(donator.GrupaKrw, dostepneGrupyKrwi)) {
                 throw new Exception("Nie wybrano grupy krwi");
             }
 
@@ -49,7 +49,7 @@ namespace Bank_krwi {
             }
         }
 
-        private bool checkIfStringIsInArray(String stringToTest, List<String> stringsList) {
+        private bool CheckIfStringIsInArray(String stringToTest, List<String> stringsList) {
             foreach(String value in stringsList) {
                 if(value == stringToTest) {
                     return true;

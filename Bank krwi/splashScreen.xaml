@@ -1,4 +1,4 @@
-﻿<Window x:Class="Bank_krwi.splashScreen"
+﻿<Window x:Class="Bank_krwi.SplashScreen"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="splashScreen" Height="413.33" Width="442.292" IsHitTestVisible="True" Visibility="Visible" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">

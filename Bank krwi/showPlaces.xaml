@@ -1,4 +1,4 @@
-﻿<Window x:Class="Bank_krwi.showPlaces"
+﻿<Window x:Class="Bank_krwi.ShowPlaces"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Nasze oddziały" Height="357" Width="489" ResizeMode="NoResize">

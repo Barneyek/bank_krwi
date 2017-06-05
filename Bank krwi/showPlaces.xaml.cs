@@ -17,9 +17,9 @@ namespace Bank_krwi
     /// <summary>
     /// Interaction logic for showPlaces.xaml
     /// </summary>
-    public partial class showPlaces : Window
+    public partial class ShowPlaces : Window
     {
-        public showPlaces()
+        public ShowPlaces()
         {
             InitializeComponent();
         }
@@ -27,19 +27,19 @@ namespace Bank_krwi
         private void gizyckoButton_Click(object sender, RoutedEventArgs e)
         {
 
-            targerPlaces tarPlace = new targerPlaces(3);
+            TargerPlaces tarPlace = new TargerPlaces(3);
             tarPlace.Show();
         }
 
         private void dzialdowoButton_Click(object sender, RoutedEventArgs e)
         {
-            targerPlaces tarPlace = new targerPlaces(2);
+            TargerPlaces tarPlace = new TargerPlaces(2);
             tarPlace.Show();
         }
 
         private void olsztynButton_Click(object sender, RoutedEventArgs e)
         {
-            targerPlaces tarPlace = new targerPlaces(1);
+            TargerPlaces tarPlace = new TargerPlaces(1);
             tarPlace.Show();
         }
     }
